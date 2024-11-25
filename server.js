@@ -18,7 +18,7 @@ mongoose.connect(MONGO_URI)
 .catch((err) => console.log(err))
 
 app.use(cors ({
-    origin : 'http://localhost:3000',
+    origin : ['http://localhost:3000', 'https://mernfront-hlb2.onrender.com'],
     methods : ['GET', 'POST', 'DELETE', 'PUT'],
     credentials : true,
 }));
